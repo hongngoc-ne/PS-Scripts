@@ -17,7 +17,7 @@ for(var n in allLayers){
 try{
 var win = new Window( 'dialog', 'Layer Name Editor' ); 
 g = win.graphics;
-var myBrush = g.newBrush(g.BrushType.SOLID_COLOR, [0.99, 0.99, 0.99, 1]);
+var myBrush = g.newBrush(g.BrushType.THEME_COLOR, "appDialogBackground");
 g.backgroundColor = myBrush;
 win.orientation='column';
 win.p1= win.add("panel", undefined, undefined, {borderStyle:"black"}); 
